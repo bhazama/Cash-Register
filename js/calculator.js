@@ -1,6 +1,6 @@
 var calculatorModule = (function(){
   var memory = 0;
-  var balance = 0;
+  var balance = 150;
 
 
 function setBalance(num){
@@ -12,73 +12,41 @@ function returnBalance(){
   return balance;
 }
 
-function add(num){
-  return memory += num;
+function deposit(num){
+  balance += num;
+  console.log(balance);
 }
 
-function subtract(num){
-  return memory -= num;
+function withdraw(num){
+  balance -= num;
 }
 
-function multiply(num){
-  return memory *= num;
+function add(num1,num2){
+  return num1 + num2;
 }
 
-function divide(num){
-  return memory /= num;
+function subtract(num1,num2){
+  return num1 - num2;
+}
+
+function multiply(num1,num2){
+  return num1 * num2;
+}
+
+function divide(num1,num2){
+  return num1 / num2;
 }
 
 return {
-  setTotal : setTotal,
-  returnTotal : returnTotal,
+  setBalance : setBalance,
+  returnBalance : returnBalance,
+  deposit : deposit,
+  withdraw : withdraw,
   add : add,
   subtract : subtract,
   multiply : multiply,
   divide : divide,
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
+
+var calculator = calculatorModule();
