@@ -1,3 +1,112 @@
+/*MINOR PROBLEM: getting the last row to align with the others
+*/
+
 #title {
+  font-size: 75px;
+  display: center;
+  text-align: center;
+}
+
+#box {
+  background-color: yellow;
+  border-style: solid;
+  border-width: 10px;
+  border-spacing: 10px;
+  border-radius: 10px;
+
+  height: 250px;
+  width: 275px;
+  position: relative;
+  padding: 15px;
+  margin:auto;
+
+}
+
+#display {
+  background-color: white;
+  border-style: solid;
+  border-spacing: 10px;
+  border-radius: 5px;
+  position: relative;
+  margin: 2px;
+  height: 30px;
+  width: 250px;
+  font-size: 25px;
+}
+
+
+
+.numberButtons {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  position: relative;
+  margin:2px;
+  display: inline-block;
+  text-align: justify;
+
+}
+
+.mathButtons {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  margin: 2px;
+  display: inline-block;
+  vertical-align: center;
+  text-align: justify;
+
+}
+
+#clear {
+  background-color: red;
+  color: white;
+  font-size:20px;
+  position: relative;
+  margin: 2px;
+  display:inline-block;
+  vertical-align: center;
+  text-align: justify;
+}
+
+
+
+#getBalance {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  position: relative;
+  margin: 2px;
+  display: inline-block;
+  vertical-align: center;
+  text-align: justify;
+}
+
+#deposit {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  position: relative;
+  margin: 2px;
+ vertical-align: center;
+  display: inline-block;
+}
+
+#withdraw {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  position: relative;
+  margin: 2px;
+  vertical-align: center;
+  display: inline-block;
+}
+
+#equalButton {
   background-color: blue;
+  color: white;
+  margin-top: 5px;
+  height: 35px;
+  width: 250px;
 }

@@ -1,3 +1,7 @@
+//CURRENT PROBLEM: clicking "withdraw" button displays undefined. Find a way to get the "balance" to show. currently shows as undefined.
+
+
+
 
 // OPERATORS FOR MATH COMPUTATIONS
 var currentValue = 0; // FIRST VALUE OF MATH OP
@@ -139,7 +143,7 @@ depositButton.addEventListener("click",function(){
 ///WITHDRAW BUTTON///
 var withdrawButton = document.getElementById("withdraw");
 withdrawButton.addEventListener("click", function(){
-  console.log(displayNum,calculatorModule.balance);
+  //console.log(displayNum,calculator.balance);
   if(displayNum > calculator.balance){
     displayButton.innerHTML = "not enough funds";
   }else{
@@ -149,8 +153,6 @@ withdrawButton.addEventListener("click", function(){
 
 
   });
-
-
 
 
 
