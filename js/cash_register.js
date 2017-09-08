@@ -1,7 +1,6 @@
 //CURRENT PROBLEM: clicking "withdraw" button displays undefined. Find a way to get the "balance" to show. currently shows as undefined.
 
-
-
+var test = 0;
 
 // OPERATORS FOR MATH COMPUTATIONS
 var currentValue = 0; // FIRST VALUE OF MATH OP
@@ -78,7 +77,7 @@ for(var i = 0; i < mathButtons.length; i++){
       operator = "+";
       break;
 }
-  
+
   displayArr = [];
   displayScreen = "";
   displayNum = 0;
